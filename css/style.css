@@ -10,5 +10,66 @@ body {
 body .header {
   background-color: rgb(11, 12, 11);
 }
+body .header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .header-top .logoimg {
+  width: 101px;
+}
+body .header .header-top .logo_text {
+  cursor: default;
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: #0bff01;
+  text-shadow: 0 0 7px #0bff01, 0 0 10px #0bff01, 0 0 21px #0bff01, 0 0 42px #0bff01;
+}
+body .header .header-top .header-btn {
+  background-color: rgb(11, 12, 11);
+  border: none;
+  font-size: x-large;
+  height: 30px;
+}
+body .header .header-top .header-btn .header-btn i {
+  cursor: pointer;
+  color: #0bff01;
+  text-shadow: 0 0 7px #0bff01;
+}
+body .header .header-menu {
+  display: none;
+  padding-top: 10px;
+}
+body .header .header-menu .header-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body .header .header-menu .header-menu ul .header-menu ul li a {
+  text-decoration: none;
+  color: rgb(227, 227, 227);
+  text-shadow: 0 0 5px #0bff01;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body .header .header-menu-dos {
+  padding: 20px 0px 10px 0px;
+  display: none;
+  justify-content: space-around;
+  font-size: large;
+}
+body .header .header-menu-dos .header-menu-dos a i {
+  color: #0bff01;
+  text-shadow: 0 0 5px #0bff01;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
