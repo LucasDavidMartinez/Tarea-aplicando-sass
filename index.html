@@ -11,6 +11,78 @@
     <title>Inicio</title>
 </head>
 <body>
-    
+
+    <!--Inicio del header-->
+    <header class="header">
+
+        <!--Logo con nombre de la página-->
+        <div class="header-top">
+            <img src="/imagenesyiconos/PowerArg-sinfondo.png" class="logoimg" alt="Logo">
+            <p class="logo_text">powerarg</p>
+            <!--Boton hamburguesa para versión mobile-->
+            <button class="header-btn">
+                <i class="fa-solid fa-bars menuhamburguesa"></i>
+            </button>
+        </div>
+            
+        <!--Primera parte del menu de navegacion con los links entre secciones de la página-->
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="servicios.html">servicios</a></li>
+                <li><a href="productos.html">productos</a></li>
+                <li><a href="clientes.html">clientes</a></li>
+                <li><a href=".contactanos">contactos</a></li>
+            </ul>
+        </nav>
+
+        <!--Segunda parte del menu, no supe bien que etiqueta ponerle-->
+        <div class="header-menu-dos">
+            <a href="signup.html"><i class="fa-solid fa-user-plus"></i></a>
+            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+    </header>
+    <!--Fin del header-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Script para el menu hamburguesa (Con esto cuando clickeo el icono del menu se despliega)-->
+    <script>
+        const header_btn = document.querySelector(".header-btn")
+        const header_menu = document.querySelector(".header-menu")
+        const header_menu_dos = document.querySelector(".header-menu-dos")
+        header_btn.addEventListener("click", () => {
+            if (header_menu.style.display != "block"){
+                header_menu.style.display = "block"
+                header_menu_dos.style.display = "flex"
+            } else{
+                header_menu.style.display = "none"
+                header_menu_dos.style.display = "none"
+            }
+        })
+    </script>
 </body>
 </html>
