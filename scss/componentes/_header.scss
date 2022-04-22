@@ -1,5 +1,12 @@
-.header{
-    
+@import "../base/extends";
+@import "../base/variables";
+
+body{
+    @extend %setnone;
+    .header{
+        background-color: $bg-color-header-y-footer;
+    }
+
 }
 
 
